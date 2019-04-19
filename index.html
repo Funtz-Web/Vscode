@@ -26,6 +26,20 @@
     document.write(Lists[i].getAttribute("title")+"<br>");
     }
   }
+
+
 </script>
+
+<script>
+  function popup(winURL){
+    window.open(winURL,"popup","width=480,height=320");
+  }
+</script>
+
+  <!-- <input type="button" value="baidu" onclick="popup('http://www.baidu.com')"> -->
+
+  <a href="http://www.baidu.com" onclick="popup('this.href'); return false;">Example</a>
+
+
 </body>
 </html>
