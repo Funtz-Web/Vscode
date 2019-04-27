@@ -1,0 +1,36 @@
+body {
+	font-family: sans-serif;
+	/* text-decoration: overline; */
+	/* text-decoration: line-through; */
+}
+
+h1, h2 {    
+	color: gray;
+}
+
+h1 { 
+	border-bottom: 1px solid black;
+}
+
+p {
+	color: maroon;
+}
+
+
+
+/* em {
+	font-family: serif;
+} */
+
+
+p.blueberry {
+	color: purple;
+}
+
+p.greentea {
+	color: green;
+}
+
+p.raspberry {
+	color: blue;
+}
