@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三角形的案例</title>
+    <style>
+        body, div {
+            padding: 0;margin: 0;
+        }
+        .main {
+            width: 600px;
+            margin: 100px auto;
+        }
+        .btn1, .btn2, .btn3, .btn4{
+            position: relative;
+            height: 32px;
+            width: 150px;
+            line-height: 32px;
+            color: #eee;
+            text-align: center;
+            background-color: #90c;
+            border: 1px solid #90c;
+            border-radius: 3px;
+        }
+        .btn1::before {
+            content: "";
+            position: absolute;
+            left: 45%;
+            top: -12px;
+            display: block;
+            /* width: 9px;
+            height: 9px; */
+            /* background-color: green; */
+            border: 6px solid #90c;
+            border-color: transparent transparent #90c;
+            border-style: dashed dashed solid;
+        }
+        .btn2::before {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            top: 35%;
+            left: -12px;
+            border: 6px solid #90c;
+            border-color: transparent #90c transparent transparent;
+            border-style: dashed solid dashed dashed;
+        }
+        .btn3::before {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            top: 35%;
+            right: -12px;
+            border: 6px solid #90c;
+            border-color: transparent transparent transparent #90c ;
+            border-style: dashed dashed dashed solid;
+        }
+        .btn4::before {
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -12px;
+            right: 45%;
+            border: 6px solid #90c;
+            border-color: #90c transparent transparent transparent;
+            border-style: solid dashed dashed dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="btn1">
+            气泡按钮
+        </div>
+        <hr>
+        <div class="btn2">
+            左侧的气泡按钮
+        </div>
+        <hr>
+        <div class="btn3">
+            右侧的气泡按钮
+        </div>
+        <hr>
+        <div class="btn4">
+            下面的气泡按钮
+        </div>
+    </div>
+</body>
+</html>
