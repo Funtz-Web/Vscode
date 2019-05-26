@@ -1,0 +1,43 @@
+@charset "uft8";
+
+/* 倒三角 */
+
+.triangle-down {
+    border: 5px;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    height: 0;
+    width: 0;
+}
+
+/* 清除浮动 */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+    height: 0;
+    line-height: 0px;
+    visibility: hidden;
+}
+
+/* 单三角 */
+.triangle-up-s {
+    position: relative;
+}
+.triangle-up-s::before, .triangle-up-s::after {
+    content: "";
+    border: 5px solid #f1f1f1;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #f1f1f1;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+}
+.triangle-up-s::after {
+    border-color: transparent transparent #fff;
+    top: -8px;
+}

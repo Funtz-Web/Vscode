@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+body {
+    color: #666;
+    font-size: 12px;
+}
+a {
+    color: #666;
+}
+
+
+/* ==>S  顶部区域 */
+
+.h-header .top-nav {
+    margin: 0 auto;
+    width: 1190px;
+    height: 74px;
+    padding-top: 24px;
+}
+/*S logo区域 */
+.h-header .top-nav .logo {
+    float: left
+}
+.top-nav .logo h1 {
+    position: absolute;
+    text-indent: -9999999px;
+}
+
+/*S logo区域 */
+
+/* S 搜索栏区域 */
+.h-header .top-nav .search {
+    position: relative;
+    margin: 0 265px 0 357px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.top-nav .search .course-sel {
+    border: 1px solid #ececec;
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+}
+.top-nav .search input {
+    border: 1px solid #ececec;
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    padding-left: 1em;
+}
+.search .course-sel, .search input {
+    float: left;
+}
+/* 设置倒三角 */
+.top-nav .search .icon-sel {
+    float: right;
+    margin: 14px 6px;
+}
+/* 设置弹出层 */
+.top-nav .search .course-menu {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+}
+.h-header .course-menu li {
+    border: 1px solid #ececec;
+    border-top: none;
+    width: 66px;
+}
+
+.top-nav .course-sel:hover .course-menu {
+    display: block;
+}
+.top-nav .course-menu li:hover {
+    background-color: #ccc;
+}
+/* 设置两个模块对齐 */
+.top-nav .search .icon-search {
+    position: absolute;
+    top: 15px;
+    left: 445px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/search.gif') no-repeat;
+}
+/* E 搜索栏区域 */
+
+.h-header .top-nav .user-nav {
+    float: right
+}
+
+.h-header .site-nav-wrap {
+    margin: 0 auto;
+    height: 60px;
+    width: 1190px;
+
+}
+
+/* S 用户导航栏区域 */
+.h-header .top-nav .user-nav {
+    padding-top: 5px;
+}
+
+/* 设置消息框，头像，教师端三模块浮动 */
+div.user-nav > ul > li {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 11px 0 14px;
+}
+
+/* 设置消息框模块 */
+.h-header .user-nav .msg-wrap {
+    position: relative;
+    top: 10px;
+    width: 34px;
+    height: 40px;
+    background: url('../img/sprite-msg.png') no-repeat left top;
+}
+.h-header .user-nav .msg {
+    position: relative;
+    top: -15px;
+    right: -18px;
+    display: inline-block;
+    width: 34px;
+    height: 40px;
+    line-height: 18px;
+    padding-left: 4px;
+    background: url('../img/sprite-msg.png') no-repeat left bottom;
+}
+.h-header .user-nav .msg-num {
+    color: #fff;
+}
+
+/* 设置头像和教师端下三角 */
+.h-header .user-nav i.icon {
+    display: inline-block;
+    float: right;
+    margin: 17px 0 0 7px;
+}
+/* 设置个人用户头像模块 */
+.h-header .user-nav .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; 
+}
+.user-nav .username {
+    display: inline-block;
+}
+
+/* 设置弹出来的用户菜单 */
+.h-header .user-nav .user {
+    position: relative;
+}
+.h-header .user-nav .user-menu-cover {
+    position: absolute;
+    left: 0;
+    top: 42px;
+    display: none;
+}
+.user-nav .user:hover .user-menu-cover {
+    display: block;
+}
+/* 设置弹出层的样式 */
+.user-nav .user-menu-cover li {
+    display: block;
+    border: 1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+.user-nav .user-menu-cover li:hover {
+   background-color: #ececec;
+}
+
+/* 设置教师弹出层 */
+.h-header .user-nav .teacher {
+    position: relative;
+}
+.user-nav .teacher-cover {
+    position: absolute;
+    left:-20px;
+    top: 42px;
+    display: none;
+}
+.user-nav .teacher:hover .teacher-cover {
+    display: block;
+}
+.user-nav .teacher li {
+    border: 1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+.user-nav .teacher li:hover {
+    background-color: #ececec;
+}
+/* E 用户导航栏区域 */
+
+
+
+/* ==>E  顶部区域 */
+
+
+/* ==>S  布局的CSS代码 */
+
+/* ==>S  布局的CSS代码 */
+
+/* ==>S  布局的CSS代码 */
+
+/* ==>S  布局的CSS代码 */
