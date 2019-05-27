@@ -3,6 +3,7 @@
 body {
     color: #666;
     font-size: 12px;
+    /* font-family: 'Mircosoft YaHei','Courier New', Courier, monospace */
 }
 a {
     color: #666;
@@ -186,6 +187,7 @@ div.user-nav > ul > li {
     left:-20px;
     top: 42px;
     display: none;
+    z-index: 999;
 }
 .user-nav .teacher:hover .teacher-cover {
     display: block;
@@ -201,14 +203,153 @@ div.user-nav > ul > li {
 }
 /* E 用户导航栏区域 */
 
+/* S 设置主导航区 */
 
+.h-header .site-nav {
+    background-color: #3598db;
+    font-size: 16px;
+    color: #fff;
+}
+.h-header .site-nav a {
+    color: #fff;
+}
+
+.h-header .site-nav .site-nav-wrap {
+    width: 1190px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+/* 设置右侧导航栏背景颜色 */
+.site-nav .bg-red-wrap {
+    margin-left: 1190px;
+    position: relative;
+    
+}
+.site-nav .bg-red-wrap .bg-red {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 60px;
+    background-color: #e7594d;
+}
+
+/* 设置左侧导航区域 */
+.site-nav .site-nav-wrap .main-nav {
+    float: left;
+}
+.site-nav-wrap .main-nav ul > li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 10px;
+}
+.main-nav-list li a {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+.main-nav-list li a.current {
+    background-color: #2db0f9;
+}
+.main-nav-list li a:hover {
+    background-color: #2db0f9;
+}
+
+/* 设置右侧导航区域 */
+.site-nav .site-nav-wrap .aside-nav {
+    float: right;
+    background-color: #e7594d;
+}
+.site-nav-wrap .aside-nav ul > li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+/* E 设置主导航区 */
 
 /* ==>E  顶部区域 */
 
+/* ========================================================= */
+/* ==>S  banner区域 */
+.h-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 404px;
+    background-color: #61caff;
+}
+.h-banner .banner-img {
+    width: 100%;
+}
+.h-banner .slide-bar {
+    position: absolute;
+    left: 50%;
+    top: 376px;
+    z-index: 100px;
+    margin-left: -45px; 
+    width: 90px;
+    height: 14px;
+}
+.h-banner .slide-bar .slide-btn {
+    float: left;
+}
+.h-banner .slide-btn a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/ico_circle.png') no-repeat -73px 0;
+    margin-right: 15px;
+}
+.h-banner .slide-btn a.cur-banner, .h-banner .slide-btn a:hover {
+    background: url('../img/ico_circle.png') no-repeat -58px -22px;
+}
 
-/* ==>S  布局的CSS代码 */
+/* ==>E  banner区域 */
 
-/* ==>S  布局的CSS代码 */
+/* ==>S  产品列表区域 */
+.h-main .p-module {
+    width: 1190px;
+    margin: 35px auto;
+    /* border: 1px solid #e7594d;
+    height: 300px; */
+}
+.p-module .p-module-head {
+    height: 40px;
+    line-height: 40px;
+}
+.p-module .p-module-head .p-module-title {
+    float: left;
+    font-size: 23px;
+    border-left: 7px solid #2db0f9;
+    padding-left: 16px;
+}
+.p-module .p-module-head .p-module-more {
+    float: right;
+    color: #4aa0dd;
+}
+
+.p-module .p-module-body {
+    margin-top: 20px;
+}
+.p-module .p-module-body .p-module-main {
+    width: 210px;
+    height: 240px;
+    float: left;
+    overflow: hidden;
+    margin: 0 18px 10px 10px;
+    font-size: 15px;
+}
+.p-module-main a img {
+    margin: 7px 0;
+}
+
+/* ==>E  产品列表区域 */
 
 /* ==>S  布局的CSS代码 */
 

@@ -41,3 +41,8 @@
     border-color: transparent transparent #fff;
     top: -8px;
 }
+
+/* 弹出菜单透明兼容性设置 */
+.cover {
+    background-color: #fff;
+}
