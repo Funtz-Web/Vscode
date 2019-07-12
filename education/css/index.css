@@ -162,6 +162,7 @@ div.user-nav > ul > li {
     left: 0;
     top: 42px;
     display: none;
+    z-index: 999;
 }
 .user-nav .user:hover .user-menu-cover {
     display: block;
