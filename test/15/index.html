@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>函数练习</title>
+</head>
+<body>
+    <script>
+        
+        function week(num) {
+            switch (num) {
+                case 1:
+                    return "周一";
+                break;
+                case 2:
+                    return "周二";
+                break;
+                case 3:
+                    return "周三";
+                break;
+                case 4:
+                    return "周四";
+                break;
+                case 5:
+                    return "周五";
+                break;
+                case 6:
+                    return "周六";
+                break;
+                case 7:
+                    return "周日";
+                break;
+                default:
+                    return "请输入正确的数字";
+            }
+        }
+        
+        function sum(num) {
+        
+            if (typeof(num) != 'number' || num < 1) return NaN;
+            var i = 1, result = 0;
+            while (i<num) {
+                result += i;
+                i++;
+            }
+            return result;
+        }
+
+        function fac(num) {
+            if (num<0 || typeof(num) != 'number') return NaN;
+            if (num === 1) return 1;
+            var i = 1, result = 1;
+            while (i <= num ) {
+                result *= i;
+                i++;
+            } 
+            return result;
+        }
+        console.log(fac(3));
+
+
+
+    </script>
+</body>
+</html>
