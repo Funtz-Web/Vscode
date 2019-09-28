@@ -1,0 +1,126 @@
+/* 清除默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    color: #424242;
+    font-size: 12px;
+    font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+ul, ol, dd, dl, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url(../font/iconfont.eot);
+    src: url(../font/iconfont.eot) format('embedded-opentype'),
+         url(../font/iconfont.woff2) format('woff2'),
+         url(../font/iconfont.woff) format('woff'),
+         url(../font/iconfont.ttf) format('truetype'),
+         url(../font/iconfont.svg) format('svg');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-pic {
+    font-size: 6px;
+    vertical-align: 1px;
+}
+.icon-pic1 {
+    font-size: 12px;
+    vertical-align: 1px;
+}
+
+
+/* 设置顶部导航栏样式 */
+.wrapper {
+    background-color: #f5f5f5;
+}
+.wrapper .nav-top {
+    margin: 0 auto;
+    width: 1190px;
+    height: 35px;
+    color: #6c6c6c;
+    line-height: 35px;
+}
+
+
+/* 设置顶部导航栏左侧区域 */
+.nav-top .nav-user {
+    float: left;
+}
+.nav-top .nav-user .user-wrapper > li {
+    float: left;
+    margin-right: 7px;
+    padding: 0 5px;
+}
+.nav-top .nav-user li span {
+    margin-right: 7px;
+}
+.nav-user .country-select-wrapper:hover {
+    background-color: #fff;
+}
+.country-select-wrapper {
+    position: relative;
+}
+.country-select-wrapper .country-select {
+    display: none;
+    position: absolute;
+    top: 35;
+    left: 0;
+    overflow-y: scroll;
+    max-height: 270px;
+    border: 1px solid #f5f5f5;
+}
+.country-select-wrapper .country-select li {
+    width: 242px;
+    height: 29px;
+    padding: 0 5px;
+}
+.nav-user .country-select-wrapper:hover > .country-select {
+    display: block;
+}
+.country-select li:hover {
+    background-color: #f5f5f5;
+}
+.nav-user .user-login .login {
+    color: #f22e00!important;
+}
+.user-login a {
+    margin-right: 2px;
+}
+.nav-user a:hover {
+    color: #f22e00;
+}
+/* 导航栏左侧区域设置完毕 */
+
+
+
+/* 设置顶部导航栏右侧区域 */
+.nav-top .nav-item {
+    float: right;
+}
+.nav-top .nav-item .item-wrapper > li {
+    float: left;
+    margin-left: 12px;
+}
+.nav-top .nav-item li:hover > a {
+    color: #f22e00;
+}
+.nav-top .nav-item li span {
+    margin: 0 3px;
+}
+.nav-top .nav-item li .line-vertical {
+    color: #ddd;
+}

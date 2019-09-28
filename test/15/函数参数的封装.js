@@ -13,4 +13,4 @@ var my = {
     text: 'laoma'
 };
 
-rect(my);
+rect(my); 
